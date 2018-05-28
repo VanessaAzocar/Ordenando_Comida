@@ -8,26 +8,25 @@ Escribe una función, que de acuerdo a la disponibilidad de los platos en el men
 decidas qué ordenar.*/
 
 
-alert ("¡Bienvenido al Restaurant!");
+alert ("¡Bienvenido al Restaurant SUPERWENO!");
+const hamburguer = [
+"hamburguesa"
+];
 
-switch (prompt ("¿Qué quieres ordenar?")){
-   
-case "ceviche": 
-alert("Ceviche no tenemos disponible");
-prompt("¿Alguna otra cosa?");
+const food= prompt ("¿Qué quieres ordenar?");
 
-case "tacos al pastor":
-alert("No tenemos ese tipo de Tacos");
-prompt("¿Otra cosa?");
 
-case "empanada chilena":
-alert("Se nos acabaron");
-prompt("Danos otra oportunidad");
+if (hamburguer.indexOf(food) < 0){
+alert("SUPERWENO no tiene este platillo");
+
+} else {
+alert ("SUPERWENO realiza tu pedido")
+}
+
+switch (food){
 case "hamburguesa":
-alert("¡Sí tenemos disponible\n \n Págame $5.500"  );
+alert("pagame $4.500");
+break;
 
 }
-alert("Tú hambuerguesa se está preparando")
-
-
 }
