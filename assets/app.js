@@ -9,24 +9,22 @@ decidas qué ordenar.*/
 
 
 alert ("¡Bienvenido al Restaurant SUPERWENO!");
-const hamburguer = [
-"hamburguesa"
-];
+let hamburguer = "hamburguesa";
 
-const food= prompt ("¿Qué quieres ordenar?");
+let food= prompt ("¿Qué quieres ordenar?");
 
-
-if (hamburguer.indexOf(food) < 0){
-alert("SUPERWENO no tiene este platillo");
-
-} else {
-alert ("SUPERWENO realiza tu pedido")
-}
-
+do {
+    
+if (food==hamburguer){
+alert("SUPERWENO realiza tu pedido");
 switch (food){
-case "hamburguesa":
-alert("pagame $4.500");
-break;
-
+    case hamburguer:
+    alert("pagame $4.500");
+    break; 
 }
+} else {
+alert ("SUPERWENO no tiene este platillo");
+food= prompt ("¿Qué quieres ordenar?");
+}
+} while(food!==hamburguer);
 }
